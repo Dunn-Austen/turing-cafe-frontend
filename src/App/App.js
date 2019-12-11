@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Form from '../Form/Form';
+import Reservations from '../Reservations/Reservations';
+
 
 class App extends Component {
   constructor() {
@@ -20,7 +22,6 @@ class App extends Component {
 
 
 
-
   render() {
     return (
       <div className="App">
@@ -29,7 +30,7 @@ class App extends Component {
         <Form />
         </div>
         <div className='resy-container'>
-
+          <Reservations />
         </div>
       </div>
     )
