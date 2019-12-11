@@ -13,15 +13,15 @@ class Form extends Component {
     }
   }
 
-  clearInputFields() {
+  clearInputFields = event =>  {
     this.setState({name: '', date: '', time: '', numGuests: ''})
   }
 
-  handleUserInput(event) {
+  handleUserInput = event => {
     this.setState({[event.target.name]: event.target.value});
   }
 
-  submitReservation(event) {
+  submitReservation = event =>  {
     event.preventDefault();
     this.props.addReservation(this.state);
     this.clearInputFields()
@@ -60,7 +60,7 @@ class Form extends Component {
         />
         <button
           className="make-reservation"
-          onClick={() => this.submitReservation()}>
+          onClick={event => this.submitReservation(event)}>
             Make Reservation
         </button>
       </form>
