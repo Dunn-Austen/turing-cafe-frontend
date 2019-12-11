@@ -2,3 +2,15 @@ form {
   height: 100%;
   width: 100%;
 }
+
+input {
+  font-weight: bold;
+  height: 70%;
+  margin: 10px;
+}
+
+.make-reservation {
+  background-color: #A0754C;
+  color: white;
+  height: 80%;
+}
