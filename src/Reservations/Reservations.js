@@ -11,7 +11,7 @@ const Reservations = (props) => {
         date={booking.date}
         time={booking.time}
         number={booking.number}
-        key={booking.number}
+        key={`${booking.number}${booking.number}}
       />
     )
   })
