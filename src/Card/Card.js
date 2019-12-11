@@ -4,10 +4,10 @@ import './Card.css';
 const Card = (props) => {
   return (
     <div className='card'>
-      <p>{props.name}</p>
-      <p>{props.date}</p>
-      <p>{props.time}</p>
-      <p>{props.number}</p>
+      <p>Name: {props.name}</p>
+      <p>Date: {props.date}</p>
+      <p>Time: {props.time}</p>
+      <p>Guests: {props.number}</p>
     </div>
   )
 }
