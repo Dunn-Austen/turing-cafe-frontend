@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card snapshot should depict accurately 1`] = `
+<div
+  className="card"
+>
+  <p>
+    Name: 
+    Christie
+  </p>
+  <p>
+    Date: 
+    12/29
+  </p>
+  <p>
+    Time: 
+    7:00
+  </p>
+  <p>
+    Guests: 
+    12
+  </p>
+</div>
+`;
