@@ -39,7 +39,7 @@ class Form extends Component {
           type='number'
           placeholder='Number of Guests'
           name='numGuests'
-          value={this.state.numGuests}
+          value={this.state.number}
         />
         <button>Make Reservation</button>
       </form>

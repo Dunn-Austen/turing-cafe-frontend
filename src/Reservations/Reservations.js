@@ -1,9 +1,9 @@
-
 import React from 'react';
 import './Reservations.css';
 import Card from '../Card/Card';
 
 const Reservations = (props) => {
+
   const reservationCards = props.reservations.map(booking => {
     return (
       <Card
@@ -25,3 +25,7 @@ const Reservations = (props) => {
 }
 
 export default Reservations;
+
+
+{/* */}
+{/* */}

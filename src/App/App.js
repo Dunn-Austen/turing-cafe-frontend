@@ -30,7 +30,7 @@ class App extends Component {
         <Form />
         </div>
         <div className='resy-container'>
-          <Reservations />
+          <Reservations reservations={this.state.reservations}/>
         </div>
       </div>
     )
