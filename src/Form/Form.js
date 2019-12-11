@@ -8,13 +8,13 @@ class Form extends Component {
       name: '',
       date: '',
       time: '',
-      numGuests: '',
+      number: '',
 
     }
   }
 
   clearInputFields = event =>  {
-    this.setState({name: '', date: '', time: '', numGuests: ''})
+    this.setState({name: '', date: '', time: '', number: ''})
   }
 
   handleUserInput = event => {
