@@ -22,9 +22,9 @@ class Form extends Component {
   }
 
   submitReservation(event) {
-    eventPreventDefault();
+    event.PreventDefault();
     this.props.addReservation(this.state);
-    clearInputFields()
+    this.clearInputFields()
   }
 
   render() {
@@ -60,7 +60,7 @@ class Form extends Component {
         />
         <button
           className="make-reservation"
-          onClick={() => this.submitReservation(this.state)}>
+          onClick={() => this.submitReservation()}>
             Make Reservation
         </button>
       </form>
