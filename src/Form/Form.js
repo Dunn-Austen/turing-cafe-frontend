@@ -22,7 +22,7 @@ class Form extends Component {
   }
 
   submitReservation(event) {
-    event.PreventDefault();
+    event.preventDefault();
     this.props.addReservation(this.state);
     this.clearInputFields()
   }
@@ -35,28 +35,28 @@ class Form extends Component {
           placeholder='Name'
           name='name'
           value={this.state.name}
-          onChange={(event) => this.handleChange(event)}
+          onChange={(event) => this.handleUserInput(event)}
         />
         <input
           type='text'
           placeholder='Date (MM/DD)'
           name='date'
           value={this.state.date}
-          onChange={(event) => this.handleChange(event)}
+          onChange={(event) => this.handleUserInput(event)}
         />
         <input
           type='text'
           placeholder='Time'
           name='time'
           value={this.state.time}
-          onChange={(event) => this.handleChange(event)}
+          onChange={(event) => this.handleUserInput(event)}
         />
         <input
           type='number'
           placeholder='Number of Guests'
           name='number'
           value={this.state.number}
-          onChange={event => this.handleChange(event)}
+          onChange={event => this.handleUserInput(event)}
         />
         <button
           className="make-reservation"
