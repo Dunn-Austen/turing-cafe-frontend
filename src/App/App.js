@@ -7,17 +7,17 @@ import Reservations from '../Reservations/Reservations';
 
 
 const App = () => {
-  const [booking, increaseBookings] = useState([]);
-  //the useState argument is the actual starting state
+  const [bookings, increaseBookings] = useState([]);
+  //the useState argument is the actual starting state (empty array)
 
   componentDidMount() {
     fetch('http://localhost:3001/api/v1/reservations')
       .then(response => response.json())
-      .then(data => this.setState({reservations: data}));
+      .then(data => increaseBookings(data));
   }
 
     const addReservation = (newReservation) => {
-      this.setState({reservations: [...this.state.reservations, newReservation]});
+      increaseBookings([...bookings, newReservation]);
 
       fetch('http://localhost:3001/api/v1/reservations', {
         method: 'POST',
@@ -39,7 +39,7 @@ const App = () => {
         <Form addReservation={this.addReservation}/>
         </div>
         <div className='resy-container'>
-          <Reservations reservations={this.state.reservations}/>
+          <Reservations reservations={bookings}/>
         </div>
       </div>
     )
