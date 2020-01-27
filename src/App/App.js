@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from "react";
 import './App.css';
 import Form from '../Form/Form';
 import Reservations from '../Reservations/Reservations';
