@@ -1,3 +1,10 @@
+### For practice with instituting React Hooks in a simple idea box, I repurposed the mid-mock project (Turing Cafe) from Mod 3 and converted the App component to utilize hooks.
+
+---
+
+
+
+
 ## Turing Cafe - Reservation Portal
 
 This application was built with `create-react-app`.
